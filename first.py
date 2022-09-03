@@ -44,7 +44,16 @@ what_to_execute = {
                      ("LOAD_VALUE", 1),  # the second number
                      ("ADD_TWO_VALUES", None),
                      ("PRINT_ANSWER", None)],
-    "numbers": [7, 5]}
+    "numbers": [7, 5, 8]}
+
+what_to_execute = {
+    "instructions": [("LOAD_VALUE", 0),  # the first number
+                     ("LOAD_VALUE", 1),  # the second number
+                     ("ADD_TWO_VALUES", None),
+                     ("LOAD_VALUE", 2),  # the second number
+                     ("ADD_TWO_VALUES", None),
+                     ("PRINT_ANSWER", None)],
+    "numbers": [7, 5, 8]}
 
 interpreter = Interpreter()
 interpreter.run_code(what_to_execute)
